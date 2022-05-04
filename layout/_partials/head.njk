@@ -5,9 +5,9 @@
 {% elseif is_archive() %} 
 {% set title = __('archive_a') %}
 {% elseif is_month() %}
-{% set title += ': ' + page.year + '/' + page.month %}
+{% set title = title + ': ' + page.year + '/' + page.month %}
 {% elseif is_year() %}
-{% set title += ': ' + page.year %}
+{% set title = title + ': ' + page.year %}
 {% elseif is_category() %}
 {% set title = __('category') + ': ' + page.category %}
 {% elseif is_tag() %}
@@ -92,5 +92,5 @@
 	</script>
 	{% endif %}
 	
-	{# {% include "public/json-ld.swig" %} #}
+	{# {% include "public/json-ld.njk" %} #}
 </head>

@@ -1,0 +1,8 @@
+{# 首页 #}
+{% extends '_layout.njk' %}
+{% import '_partials/index.njk' as template %}
+{% block content %}
+{% set description = theme.bio %}
+{% include '_partials/header.njk' %}
+{{ template.tpl() }}
+{% endblock %}

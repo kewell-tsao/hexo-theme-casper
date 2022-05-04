@@ -1,8 +1,8 @@
 {# 分类归档 #}
-{% extends '_layout.swig' %}
-{% import '_partials/index.swig' as template %}
+{% extends '_layout.njk' %}
+{% import '_partials/index.njk' as template %}
 {% block content %} 
 {% set description = __('categories') %}
-{% include '_partials/header.swig' %}
+{% include '_partials/header.njk' %}
 {{ template.tpl() }}
 {% endblock %}

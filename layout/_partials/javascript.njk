@@ -36,7 +36,7 @@
 
         {# 文章页浮动顶栏 #}
         {% if is_post() && theme.floadheader %}
-        {% include "public/fload-header.swig" %}
+        {% include "public/fload-header.njk" %}
             postProgressBar();
         {% endif %}
 

@@ -1,6 +1,6 @@
 <header class="site-header outer {% if theme.header_image %}" style="background-image: url({{ theme.header_image }})"{% else %}no-cover"{% endif %}>
     <div class="inner">
-        {% include 'public/nav.swig' %}
+        {% include 'public/nav.njk' %}
         <div class="site-header-content">
             {% if theme.author_image %}
             <img class="author-profile-image" src="{{ theme.author_image }}" alt="{{ config.author }}" />
