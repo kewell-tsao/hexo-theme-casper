@@ -1,19 +1,18 @@
 {# 插件容器, 在需要的页面引入 #}
-
 {% if theme.widgets %}
-<aside class="read-next outer">
+  <aside class="read-next outer">
     <div class="inner">
-        <div class="read-next-feed">
-            {% if theme.widgets.recent_posts %}
-            {% include 'widget/recent_posts.njk' %}
-            {% endif %}
-            {% if theme.widgets.category %}
-            {% include 'widget/category.njk' %}
-            {% endif %}
-            {% if theme.widgets.tagcloud %}
-            {% include 'widget/tagcloud.njk' %}
-            {% endif %}
-        </div>
+      <div class="read-next-feed">
+        {% if theme.widgets.recent_posts %}
+          {% include '_partials/widget/recent_posts.njk' %}
+        {% endif %}
+        {% if theme.widgets.category %}
+          {% include '_partials/widget/category.njk' %}
+        {% endif %}
+        {% if theme.widgets.tagcloud %}
+          {% include '_partials/widget/tagcloud.njk' %}
+        {% endif %}
+      </div>
     </div>
-</aside>
+  </aside>
 {% endif %}

@@ -1,10 +1,9 @@
 {% extends '_layout.njk' %}
-{% import '_partials/page.njk' as template %}
 {% block content %}
-{% if url_for(page.path) === theme.menu.ABOUT+'/index.html' %}
-{% include "_partials/about.njk" %}
-{% else %}
-{% include '_partials/header.njk' %}
-{% endif %}
-{{ template.tpl() }}
+  {% if url_for(page.path) === theme.menu.ABOUT+'/index.html' %}
+    {% include "_partials/about.njk" %}
+  {% else %}
+    {% include '_partials/header.njk' %}
+  {% endif %}
+  {% include '_partials/page.njk' %}
 {% endblock %}

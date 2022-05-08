@@ -1,8 +1,7 @@
 {# 标签归档 #}
 {% extends '_layout.njk' %}
-{% import '_partials/index.njk' as template %}
-{% block content %} 
-{% set description = __('tags') %}
-{% include '_partials/header.njk' %}
-{{ template.tpl() }}
+{% block content %}
+  {% set description = __('tags') %}
+  {% include '_partials/header.njk' %}
+  {% include '_partials/post/index.njk' %}
 {% endblock %}

@@ -1,8 +1,7 @@
 {# 归档 #}
 {% extends '_layout.njk' %}
-{% import '_partials/index.njk' as template %}
 {% block content %}
-{% set description = _p('total', site.posts.length) %}
-{% include '_partials/header.njk' %}
-{{ template.tpl() }}
+  {% set description = _p('total', site.posts.length) %}
+  {% include '_partials/header.njk' %}
+  {% include '_partials/post/index.njk' %}
 {% endblock %}

@@ -1,7 +1,6 @@
 {# 文章页 #}
 {% extends '_layout.njk' %}
-{% import '_partials/post.njk' as template %}
 {% block content %}
-{% include '_partials/header.njk' %}
-{{ template.tpl() }}
+  {% include '_partials/header.njk' %}
+  {% include '_partials/post/post.njk' %}
 {% endblock %}

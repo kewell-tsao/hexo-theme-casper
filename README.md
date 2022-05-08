@@ -40,9 +40,7 @@ When I was searching `beautiful hexo themes`, I saw the old version of Casper po
 - Responsive Web Design
 - Lazy load
 - Local search
-- Valine comment
 - Chrome Nav Color
-- Baidu Push Google Analytics
 - Service Worker
 - MacOS、IOS and Android dark mode (Safari、Chrome)
 
@@ -78,10 +76,6 @@ description:
 keywords: 
 ```
 
-**Valine comment**
-
-[https://valine.js.org](https://valine.js.org)
-
 **PS: Add about page**
 
 ```
@@ -98,7 +92,6 @@ rss:            # link
 favicon: https://i.loli.net/2017/11/26/5a19c0b50432e.png
 blog_logo: 
 header_image: https://i.loli.net/2017/11/26/5a19c56faa29f.jpg
-bio: This is a demo
 post_toc: true
 
 # Keywords
@@ -139,30 +132,8 @@ widgets:
   tagcloud: true
   # This is a simple theme, I think 3 is enough.
 
-# Gallery
-# https://github.com/dimsemenov/PhotoSwipe
-photoswipe: true
-
-# LazyLoad
-# home page has enabled, this value is to post page
-# https://github.com/dinbror/blazy
-lazyload: true
-
 # Local Search
 local_search: true
-
-# Comment
-# https://valine.js.org
-comment: false
-valine:
-  notify: false # mail notifier , https://github.com/xCss/Valine/wiki 
-  verify: false # Verification code
-  appId: # your leancloud application appid
-  appKey: # your leancloud application appkey
-  placeholder: Just go go # comment box placeholder
-  pageSize: 10 # pagination size
-  avatar: mm # gravatar style
-  visitor: true # page view record
 
 # PWA
 # you need create a manifest.json file in hexo's source folder
@@ -170,13 +141,6 @@ manifest: false
 service_workers: false
 
 navColor: '3c484e'
-
-# Baidu Push
-baidu: false
-
-# Google Analytics
-googleAnalytics: false
-GA_TRACKING_ID: UA-XXXXXXXXXX-1
 
 ```
 

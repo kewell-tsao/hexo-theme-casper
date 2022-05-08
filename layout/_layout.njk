@@ -1,12 +1,15 @@
 <!DOCTYPE html>
-<html lang="{{ config.language }}">
-{% include '_partials/head.njk' %}
-<body class="{{ body_class }}">
-	<div class="site-wrapper">
-		{% block content %} {% endblock %}
-	</div>
-	{% include "_partials/widget.njk" %}
-	{% include '_partials/footer.njk' %}
-	{% include "_partials/javascript.njk" %}
-</body>
+<html lang="{{ page.lang }}">
+  <head>
+    {% include '_partials/head.njk' %}
+  </head>
+  <body class="{{ body_class }}">
+    <div class="site-wrapper">
+      {% block content %}
+      {% endblock %}
+    </div>
+    {% include "_partials/widget.njk" %}
+    {% include '_partials/footer.njk' %}
+    {% include "_partials/javascript.njk" %}
+  </body>
 </html>

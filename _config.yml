@@ -1,9 +1,7 @@
 # Config
 rss:            # link
 favicon: https://i.loli.net/2017/11/26/5a19c0b50432e.png
-blog_logo: 
 header_image: https://i.loli.net/2017/11/26/5a19c56faa29f.jpg
-bio: This is a demo
 post_toc: true
 
 # Keywords
@@ -11,8 +9,6 @@ keywords: hexo, casper, ghost, theme
 
 # Menu
 menu:
-  ABOUT: /about
-  ARCHIVES: /archives
   # you can add here
 
 # author
@@ -47,30 +43,8 @@ widgets:
 # Post page fload header
 floadheader: false
 
-# Gallery
-# https://github.com/dimsemenov/PhotoSwipe
-photoswipe: true
-
-# LazyLoad
-# home page has enabled, this value is to post page
-# https://github.com/dinbror/blazy
-lazyload: true
-
 # Local Search
 local_search: true
-
-# Comment
-# https://valine.js.org
-comment: true
-valine:
-  notify: false # mail notifier , https://github.com/xCss/Valine/wiki 
-  verify: false # Verification code
-  appId: # your leancloud application appid
-  appKey: # your leancloud application appkey
-  placeholder: Just go go # comment box placeholder
-  pageSize: 10 # pagination size
-  avatar: mm # gravatar style
-  visitor: true # page view record
 
 # PWA
 # you need create a manifest.json file in hexo's source folder
@@ -78,10 +52,3 @@ manifest: false
 service_workers: false
 
 navColor: '3c484e'
-
-# Baidu Push
-baidu: false
-
-# Google Analytics
-googleAnalytics: false
-GA_TRACKING_ID: UA-XXXXXXXXXX-1

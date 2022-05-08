@@ -1,0 +1,38 @@
+{# 社交连接 #}
+<div class="social-links" style="{{ "display: none;" if (is_page() and is_current(theme.menu.ABOUT)) }}">
+  {% if theme.social.weibo %}
+    <a class="social-link" title="weibo" href="{{ theme.social.weibo }}" target="_blank" rel="noopener">
+      {{ partial("_partials/icons/weibo.svg.njk", {}, {cache: true}) }}
+    </a>
+  {% endif %}
+  {% if theme.social.github %}
+    <a class="social-link" title="github" href="{{ theme.social.github }}" target="_blank" rel="noopener">
+      {{ partial("_partials/icons/github.svg.njk", {}, {cache: true}) }}
+    </a>
+  {% endif %}
+  {% if theme.social.facebook %}
+    <a class="social-link" title="facebook" href="{{ theme.social.facebook }}" target="_blank" rel="noopener">
+      {{ partial("_partials/icons/facebook.svg.njk", {}, {cache: true}) }}
+    </a>
+  {% endif %}
+  {% if theme.social.twitter %}
+    <a class="social-link" title="twitter" href="{{ theme.social.twitter }}" target="_blank" rel="noopener">
+      {{ partial("_partials/icons/twitter.svg.njk", {}, {cache: true}) }}
+    </a>
+  {% endif %}
+  {% if theme.social.telegram %}
+    <a class="social-link" title="telegram" href="{{ theme.social.telegram }}" target="_blank" rel="noopener">
+      {{ partial("_partials/icons/telegram.svg.njk", {}, {cache: true}) }}
+    </a>
+  {% endif %}
+  {% if theme.social.bilibili %}
+    <a class="social-link" title="bilibili" href="{{ theme.social.bilibili }}" target="_blank" rel="noopener">
+      {{ partial("_partials/icons/bilibili.svg.njk", {}, {cache: true}) }}
+    </a>
+  {% endif %}
+  {% if theme.social.youtube %}
+    <a class="social-link" title="youtube" href="{{ theme.social.youtube }}" target="_blank" rel="noopener">
+      {{ partial("_partials/icons/youtube.svg.njk", {}, {cache: true}) }}
+    </a>
+  {% endif %}
+</div>
