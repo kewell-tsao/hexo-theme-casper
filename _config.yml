@@ -13,8 +13,8 @@ menu:
 
 # author
 author_image:   # link
-author_bio: 
-author_location: 
+author_bio:
+author_location:
 
 # Social Links
 social:
@@ -23,12 +23,12 @@ social:
   twitter: https://twitter.com
   facebook: https://facebook
   telegram:
-  bilibili: 
-  youtube: 
+  bilibili:
+  youtube:
   # You only can use that I have added, I will keep adding
 
 # Footer Links
-footer_text: 
+footer_text:
   # title: link
   # 粤ICP备xxxxxxx号-x: http://www.miitbeian.gov.cn
   # 粤公网安备xxxxxxx号: http://www.beian.gov.cn
@@ -45,10 +45,5 @@ floadheader: false
 
 # Local Search
 local_search: true
-
-# PWA
-# you need create a manifest.json file in hexo's source folder
-manifest: false
-service_workers: false
 
 navColor: '3c484e'

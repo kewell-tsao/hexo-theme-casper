@@ -30,13 +30,13 @@ When I was searching `beautiful hexo themes`, I saw the old version of Casper po
 
 - Posts cover image
 - Posts feature image
-- Customized navigation menu 
+- Customized navigation menu
 - Customized favicon, logo, header image, author image
-- Social links ( now support FB, TT、github、bilibili、YouTube、weibo) 
+- Social links ( now support FB, TT、github、bilibili、YouTube、weibo)
 - 3 widgets ( I think no need more )
-- Tag, Category, TOC 
+- Tag, Category, TOC
 - Pagination
-- Syntax Highlighting 
+- Syntax Highlighting
 - Responsive Web Design
 - Lazy load
 - Local search
@@ -61,19 +61,19 @@ Modify `theme` in `_config.yml` to `hexo-casper` .
 You'd better backup old file first.
 
 ```
-cd themes/casper 
+cd themes/casper
 git pull
 ```
 
 **Front-matter**
 
-Add to `scaffolds/post.md`, 
+Add to `scaffolds/post.md`,
 
 ```
 cover_img:     # show in home page, the post card header
 feature_img:   # show in post page, content header
-description: 
-keywords: 
+description:
+keywords:
 ```
 
 **PS: Add about page**
@@ -90,7 +90,7 @@ Edit `themes/hexo-casper/_config.yml` and set up what you want to show
 # Config
 rss:            # link
 favicon: https://i.loli.net/2017/11/26/5a19c0b50432e.png
-blog_logo: 
+blog_logo:
 header_image: https://i.loli.net/2017/11/26/5a19c56faa29f.jpg
 post_toc: true
 
@@ -105,8 +105,8 @@ menu:
 
 # author
 author_image:   # link
-author_bio: 
-author_location: 
+author_bio:
+author_location:
 
 # Social Links
 social:
@@ -114,13 +114,13 @@ social:
   github: https://github.com/xzhih
   twitter: https://twitter.com
   facebook: https://facebook
-  telegram: 
-  bilibili: 
-  youtube: 
+  telegram:
+  bilibili:
+  youtube:
   # You only can use that I have added, I will keep adding
 
 # Footer Links
-footer_text: 
+footer_text:
   # title: link
   # 粤ICP备xxxxxxx号-x: http://www.miitbeian.gov.cn
   # 粤公网安备xxxxxxx号: http://www.beian.gov.cn
@@ -135,18 +135,13 @@ widgets:
 # Local Search
 local_search: true
 
-# PWA
-# you need create a manifest.json file in hexo's source folder
-manifest: false
-service_workers: false
-
 navColor: '3c484e'
 
 ```
 
 ### Local Search
 
-https://github.com/wzpan/hexo-generator-search 
+https://github.com/wzpan/hexo-generator-search
 
 https://github.com/SuperKieran/hexo-generator-search-zip
 

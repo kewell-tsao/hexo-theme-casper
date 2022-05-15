@@ -56,9 +56,6 @@
   <meta name="theme-color" content="#{{ theme.navColor }}"/>
   <meta name="msapplication-TileColor" content="#{{ theme.navColor }}"/>
 {% endif %}
-{% if theme.manifest %}
-  <link rel="manifest" href="{{ url_for('/manifest.json') }}"/>
-{% endif %}
 {% if theme.rss %}
   {{ feed_tag(theme.rss, [{title:config.title}]) }}
 {% endif %}
@@ -72,10 +69,13 @@
   <meta property="article:author" content="{{ config.author }}"/>
   <meta property="article:published_first" content="{{ config.title }}, {{ url_for(page.path) }}"/>
 {% endif %}
-{# {{ css('css/screen') }}
-   {{ css('css/style') }}
-   {{ css('css/markdown') }}
-   {{ css('css/highlight') }}
-   {{ css('css/darkmode') }} #}
-{{ css('css/allinonecss.min') }}
+{{ css('css/style.css') }}
+{% if config.prismjs and config.prismjs.enable %}
+  {% if config.prismjs.css_url %}
+    {{ css(config.prismjs.css_url) }}
+  {% else %}
+    {{ css('https://cdn.jsdelivr.net/npm/prismjs@latest/themes/prism.min.css') }}
+  {% endif %}
+  {{ css('https://cdn.jsdelivr.net/npm/prismjs@latest/plugins/line-numbers/prism-line-numbers.css') }}
+{% endif %}
 {# {% include "post/json-ld.njk" %} #}

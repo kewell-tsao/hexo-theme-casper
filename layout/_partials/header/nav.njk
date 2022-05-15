@@ -4,22 +4,22 @@
       {% if theme.menu %}
         {% for menu,link in theme.menu %}
           <li>
-            <a href="{{ link }}" title="{{ menu }}">{{ menu }}</a>
+            <a href="{{ link }}" title="{{ menu }}">{{ __(menu) }}</a>
           </li>
         {% endfor %}
       {% else %}
-        <a href="{{ config.root }}" title="Home">HOME</a>
+        <a href="{{ config.root }}" title="Home">{{ __('Home') }}</a>
       {% endif %}
     </ul>
   </div>
   {% if theme.local_search %}
     <div class="search-button-area">
-      <a href="#search" class="search-button">Search ...</a>
+      <a href="#search" class="search-button">{{ __('search') }} ...</a>
     </div>
   {% endif %}
   <div class="site-nav-right">
     {% if theme.local_search %}
-      <a href="#search" class="search-button">Search ...</a>
+      <a href="#search" class="search-button">{{ __('search') }} ...</a>
     {% endif %}
     {% include '_partials/header/social.njk' %}
   </div>

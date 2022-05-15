@@ -36,7 +36,6 @@ function coverExists(prefix, { slug }) {
 function coverUrl(filePath) {
   let path = relative(hexo.source_dir, filePath).replaceAll(/\\/g, '/');
   if (path && path.length && path[0] !== '/') path = '/' + path;
-  debugger;
   const url = url_for(path);
   return url;
 }

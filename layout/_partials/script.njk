@@ -1,0 +1,17 @@
+{{ js('js/smooth-scroll.polyfills.js') }}
+{{ js('js/local-search.js') }}
+{{ js('js/post.js') }}
+<script>
+  document.addEventListener('load', function () {
+    {% if is_post() and theme.floadheader %}
+      {% include "public/fload-header.njk" %}
+      postProgressBar(); //
+    {% endif %}
+    {% if theme.local_search %}
+      searchFunc("{{ config.root }}"); //
+    {% endif %}
+  })
+</script>
+{% if config.prismjs and config.prismjs.enable %}
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@latest/components/prism-core.min.js" data-manual></script>
+{% endif %}
